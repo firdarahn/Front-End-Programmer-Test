@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+//Compiler version g++ 6.3.0
+
+int main()
+{
+  char kata[10], hasil[10];
+  int i, jumlahstring, jumlah = 0;
+
+  printf("Masukkan sebuah kata: ");
+  fgets(kata, sizeof(kata), stdin);
+
+  while (kata[jumlah] != '\0'){
+    jumlah++;
+  }
+
+  jumlahstring = jumlah - 1;
+
+  for (i = 0; i < jumlah; i++){
+    hasil[i] = kata[jumlahstring];
+    jumlahstring--;
+  }
+
+  hasil[i] = '\0';
+
+  printf("Hasil pembalikan kata: %s \n", hasil);
+  
+  if (kata == hasil)
+  {
+    cout <<"True" <<endl;
+  }
+  else
+  {
+    cout <<"False" <<endl;
+  }
+
+  return 0;
+}return 0;
+}
